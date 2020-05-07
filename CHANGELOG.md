@@ -1,3 +1,10 @@
+## [1.0.5](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.4...v1.0.5) (2020-05-07)
+
+
+### Bug Fixes
+
+* **ci:** update deployment image ([840f9fe](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/840f9fe6471bb1657a78e6e00b55ea0249d13cba))
+
 ## [1.0.4](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.3...v1.0.4) (2020-05-07)
 
 
