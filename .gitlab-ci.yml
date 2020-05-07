@@ -46,10 +46,9 @@ build_image:
 
 deploy:
   stage: deploy
+  image: bitnami/kubectl:latest
   script:
-    - curl -L -o kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl
-    - chmod +x kubectl
-    - ./kubectl version --client
-    - ./kubectl apply -f deployment.yaml
+    - kubectl version --client
+    - kubectl apply -f deployment.yaml
   only:
     - tags
