@@ -39,8 +39,17 @@ build_image:
   before_script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
   script:
-    - kubectl version --client
     - docker build -t registry.crudus.no/websites/kaldheim.org-gatsby .
     - docker push registry.crudus.no/websites/kaldheim.org-gatsby
+  only:
+    - tags
+
+deploy:
+  stage: deploy
+  script:
+    - curl -L -o kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl
+    - chmod +x kubectl
+    - ./kubectl version --client
+    - ./kubectl apply -f deployment.yaml
   only:
     - tags

@@ -22,7 +22,7 @@ spec:
         app: kaldheim-org
     spec:
       containers:
-        - image: registry.crudus.no/websites/kaldheim.org-gatsby
+        - image: registry.crudus.no/websites/kaldheim.org-gatsby:latest
           name: kaldheim-org
           imagePullPolicy: Always
           env:
