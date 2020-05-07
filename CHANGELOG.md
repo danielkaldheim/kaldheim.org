@@ -1,3 +1,10 @@
+## [1.0.8](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.7...v1.0.8) (2020-05-07)
+
+
+### Bug Fixes
+
+* **ci:** variables ([15b3c66](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/15b3c66aa06d1044612e27aabc5f9ee52f346949))
+
 ## [1.0.7](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.6...v1.0.7) (2020-05-07)
 
 
