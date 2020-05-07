@@ -1,3 +1,10 @@
+## [1.0.3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.2...v1.0.3) (2020-05-07)
+
+
+### Bug Fixes
+
+* **CI:** added kubectl deploy routine ([db189f3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/db189f33fc631e117f5e7229eaa97d0a4e0bf553))
+
 ## [1.0.2](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.1...v1.0.2) (2020-05-07)
 
 
