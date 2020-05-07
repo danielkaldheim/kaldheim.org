@@ -1,3 +1,10 @@
+## [1.0.7](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.6...v1.0.7) (2020-05-07)
+
+
+### Bug Fixes
+
+* **ci:** typo ([fec4784](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/fec47841affa15cbe39cad027bc60774797d20d1))
+
 ## [1.0.6](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.5...v1.0.6) (2020-05-07)
 
 
