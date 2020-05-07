@@ -1,0 +1,104 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: websites
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kaldheim-org
+  namespace: websites
+  labels:
+    app: kaldheim-org
+spec:
+  selector:
+    matchLabels:
+      app: kaldheim-org
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: kaldheim-org
+    spec:
+      containers:
+        - image: registry.crudus.no/websites/kaldheim.org-gatsby
+          name: kaldheim-org
+          imagePullPolicy: Always
+          env:
+            - name: TZ
+              value: "Europe/Oslo"
+          resources:
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+          ports:
+            - containerPort: 80
+              name: http
+      imagePullSecrets:
+        - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kaldheim-org
+  namespace: websites
+  labels:
+    app: kaldheim-org
+spec:
+  selector:
+    app: kaldheim-org
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP
+  type: LoadBalancer
+---
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: kaldheim-org
+  namespace: websites
+  labels:
+    app: kaldheim-org
+spec:
+  secretName: ha-kaldheim-org-tls
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  dnsNames:
+    - kaldheim.org
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - kaldheim.org
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  labels:
+    app: kaldheim-org
+  name: kaldheim-org
+  namespace: websites
+spec:
+  rules:
+    - host: kaldheim.org
+      http:
+        paths:
+          - backend:
+              serviceName: kaldheim-org
+              servicePort: http
+            path: /
+  tls:
+    - hosts:
+        - kaldheim.org
+      secretName: ha-kaldheim-org-tls
