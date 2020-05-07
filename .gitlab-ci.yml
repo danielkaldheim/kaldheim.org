@@ -39,9 +39,9 @@ build_image:
   before_script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
   script:
-    - docker build -t registry.crudus.no/websites/kaldheim.org-gatsby:latest -t registry.crudus.no/websites/kaldheim.org-gatsby:${CI_REGISTRY_TAG} .
-    - docker push registry.crudus.no/websites/kaldheim.org-gatsby
-    - docker push registry.crudus.no/websites/kaldheim.org-gatsby:${CI_REGISTRY_TAG}
+    - docker build -t ${CI_REGISTRY_IMAGE}:latest -t ${CI_REGISTRY_IMAGE}:${CI_REGISTRY_TAG} .
+    - docker push ${CI_REGISTRY_IMAGE}
+    - docker push ${CI_REGISTRY_IMAGE}:${CI_REGISTRY_TAG}
   only:
     - tags
 
@@ -50,7 +50,7 @@ deploy:
   image: bitnami/kubectl:latest
   script:
     - kubectl version --client
-    - kubectl set image deployment kaldheim-org kaldheim-org=registry.crudus.no/websites/kaldheim.org-gatsby:${CI_REGISTRY_TAG} -n websites
+    - kubectl set image deployment kaldheim-org kaldheim-org=${CI_REGISTRY_IMAGE}:${CI_REGISTRY_TAG} -n websites
   environment:
     name: kaldheim-org
     url: https://kaldheim.org
