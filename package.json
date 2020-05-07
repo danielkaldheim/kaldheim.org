@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-friend",
-  "description": "A simple starter for Gatsby. That's it.",
-  "version": "0.2.0",
-  "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
+  "name": "kaldhiem-org",
+  "description": "Daniel Rufus Kaldheim - blog",
+  "version": "1.0.0",
+  "author": "Daniel Rufus Kaldheim <daniel@kaldheim.org>",
   "keywords": [
     "gatsby",
     "minimal",
@@ -76,9 +76,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/panr/gatsby-starter-hello-friend"
-  },
-  "bugs": {
-    "url": "https://github.com/panr/gatsby-starter-hello-friend/issues"
+    "url": "https://gitlab.crudus.no/websites/kaldheim.org-gatsby.git"
   }
 }
