@@ -1,3 +1,11 @@
+## [1.0.4](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.3...v1.0.4) (2020-05-07)
+
+
+### Bug Fixes
+
+* **ci:** set kubectl image ([4859a8f](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/4859a8f1fe0e220ca68a07160678c11922a04d2a))
+* **language:** better language? ([1c3924f](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/1c3924f40b03432835a0c2aea5730d4b5a075690))
+
 ## [1.0.3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.2...v1.0.3) (2020-05-07)
 
 
