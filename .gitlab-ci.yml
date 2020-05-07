@@ -33,3 +33,13 @@ semantic:
     - semantic-release -e @crudus/semantic-release-config
   only:
     - master
+
+build_image:
+  stage: build
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker build -t registry.crudus.no/websites/kaldheim.org-gatsby .
+    - docker push registry.crudus.no/websites/kaldheim.org-gatsby
+  only:
+    - tags
