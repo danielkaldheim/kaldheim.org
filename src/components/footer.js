@@ -1,29 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Footer = ({ copyrights }) => (
   <footer>
-    {copyrights ? (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: copyrights,
-        }}
-      />
-    ) : (
-      <>
-        <span className="footerCopyrights">
-          © 2019 Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </span>
-        <span className="footerCopyrights">
-          Starter created by <a href="https://radoslawkoziel.pl">panr</a>
-        </span>
-      </>
-    )}
+    <span className="footerCopyrights">&copy; 2020 &ndash; {copyrights}</span>
+    <span className="footerCopyrights soscialIcons">
+      <a href="https://www.instagram.com/dark.makes/">
+        <i className="fab fa-instagram" />
+      </a>
+      <a href="https://www.youtube.com/channel/UCZMleiZH9L-lUjNOLQAJsWA">
+        <i className="fab fa-youtube" />
+      </a>
+      <a href="https://github.com/danielkaldheim">
+        <i className="fab fa-github" />
+      </a>
+    </span>
   </footer>
-)
+);
 
 Footer.propTypes = {
   copyrights: PropTypes.string,
-}
+};
 
-export default Footer
+export default Footer;

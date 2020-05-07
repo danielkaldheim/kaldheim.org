@@ -1,21 +1,21 @@
-const postCssPresetEnv = require(`postcss-preset-env`)
-const postCSSNested = require('postcss-nested')
-const postCSSUrl = require('postcss-url')
-const postCSSImports = require('postcss-import')
-const cssnano = require('cssnano')
-const postCSSMixins = require('postcss-mixins')
+const postCssPresetEnv = require(`postcss-preset-env`);
+const postCSSNested = require('postcss-nested');
+const postCSSUrl = require('postcss-url');
+const postCSSImports = require('postcss-import');
+const cssnano = require('cssnano');
+const postCSSMixins = require('postcss-mixins');
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Friend`,
-    description: `A simple starter for Gatsby. That's it.`,
-    copyrights: '',
-    author: `@panr`,
+    title: `Daniel Rufus Kaldheim`,
+    description: `Dark makes, my personal blog`,
+    copyrights: 'Daniel Rufus Kaldheim',
+    author: `@danielkaldheim`,
     logo: {
       src: '',
       alt: '',
     },
-    logoText: 'hello friend',
+    logoText: 'daniel rufus kaldheim',
     defaultTheme: 'dark',
     postsPerPage: 5,
     showMenuItems: 2,
@@ -26,12 +26,8 @@ module.exports = {
         path: '/about',
       },
       {
-        title: 'Showcase',
-        path: '/showcase',
-      },
-      {
-        title: 'Example',
-        path: '/example',
+        title: 'Projects',
+        path: '/projects',
       },
     ],
   },
@@ -59,6 +55,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -68,7 +65,7 @@ module.exports = {
           postCSSMixins(),
           postCSSNested(),
           postCssPresetEnv({
-            importFrom: 'src/styles/variables.css',
+            importFrom: 'src/styles/variables.scss',
             stage: 1,
             preserve: false,
           }),
@@ -85,6 +82,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
+          {
             resolve: 'gatsby-remark-embed-video',
             options: {
               related: false,
@@ -99,12 +102,36 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                instagram: `gatsby-plugin-instagram-embed`,
+                twitter: `gatsby-plugin-twitter`,
+                // The service-specific options by the name of the service
+              },
+            },
+          },
+          {
+            resolve: 'gatsby-remark-github',
+            options: {
+              marker: 'GITHUB-EMBED',
+              insertEllipsisComments: true,
+              ellipsisPhrase: '...',
+              useCache: true,
+              cacheKey: 'gatsby-remark-github-v1',
+              token: 'd0d47bd87f35ad373002298665da47ad5bc3e07d',
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
-              showLineNumbers: false,
+              showLineNumbers: true,
               noInlineHighlight: false,
             },
           },
@@ -114,14 +141,43 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-hello-friend`,
-        short_name: `hello-friend`,
+        name: `daniel-rufus-kaldheim-blog`,
+        short_name: `daniel-rufus-kaldheim`,
         start_url: `/`,
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
         display: `minimal-ui`,
-        icon: `src/images/hello-icon.png`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-10300523-5',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ['/preview/**', '/do-not-track/me/too/'],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'kaldheim.org',
       },
     },
   ],
-}
+};
