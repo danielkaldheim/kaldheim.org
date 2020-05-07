@@ -30,8 +30,10 @@ module.exports = {
         path: '/projects',
       },
     ],
+    siteUrl: `https://kaldheim.org`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `babel-preset-gatsby`,
     `gatsby-plugin-react-helmet`,
     {
