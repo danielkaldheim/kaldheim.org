@@ -15,7 +15,10 @@ spec:
     matchLabels:
       app: kaldheim-org
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   template:
     metadata:
       labels:
