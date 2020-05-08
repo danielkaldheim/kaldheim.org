@@ -1,3 +1,11 @@
+## [1.0.9](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.8...v1.0.9) (2020-05-08)
+
+
+### Bug Fixes
+
+* **ci:** docker pushes all tags ([6a2f1dd](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/6a2f1ddf1dd131d131c754308d75537edc7dea42))
+* **header:** cursor color change on dark / white theme ([c089321](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/c089321936a99c735ab3126ccb154952d2508732))
+
 ## [1.0.8](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.7...v1.0.8) (2020-05-07)
 
 
