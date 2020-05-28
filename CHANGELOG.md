@@ -1,3 +1,12 @@
+## [1.1.1](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.0...v1.1.1) (2020-05-28)
+
+
+### Bug Fixes
+
+* **ci:** env variables ([a696a3d](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/a696a3d4cbd37a3c50ac13d55004ee77fa334230))
+* **ci:** ssh ([09a2524](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/09a2524a55f52d3775c3c729eea6bb968a63904d))
+* **cleanup:** update notes ([b783516](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/b783516f98f07ece655b7a32d6167a51e9bbf418))
+
 # [1.1.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.9...v1.1.0) (2020-05-28)
 
 
