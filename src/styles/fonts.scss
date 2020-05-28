@@ -2,7 +2,33 @@ $fa-font-path: "../../static/fonts/fontawesome";
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/fa-light.scss";
 @import "fontawesome/fa-brands.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,600,800");
 
+@font-face {
+  font-family: "Fedra Sans Std";
+  src: url("../../static/fonts/Fedra/Fedra-Sans-Std-Regular.woff2") format("woff2"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Regular.woff") format("woff"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fedra Sans Std";
+  src: url("../../static/fonts/Fedra/Fedra-Sans-Std-Medium.woff2") format("woff2"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Medium.woff") format("woff"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fedra Sans Std";
+  src: url("../../static/fonts/Fedra/Fedra-Sans-Std-Bold.woff2") format("woff2"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Bold.woff") format("woff"),
+    url("../../static/fonts/Fedra/Fedra-Sans-Std-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+/*
 @font-face {
   font-family: "Inter UI";
   font-style: normal;
@@ -41,3 +67,4 @@ $fa-font-path: "../../static/fonts/fontawesome";
   font-weight: 800;
   src: url("../../static/fonts/Inter-UI-BoldItalic.woff") format("woff");
 }
+*/

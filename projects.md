@@ -6,9 +6,6 @@ type: "page"
 path: "/projects"
 ---
 
-Over the years I have had so many ideas that I forgot to do something about so I made my self a promise to write them down.
-Here's a list of my notes about ideas and projects I'm currently working on.
-
 ## My project notes
 
 - [BMW Media Center](/projects/bmw-media-center)
