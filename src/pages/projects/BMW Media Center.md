@@ -4,7 +4,6 @@ date: "2020-04-27 08:51:20 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/bmw-media-center"
-tags: ["Projects", "BMW Media Center"]
 ---
 
 

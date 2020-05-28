@@ -4,7 +4,6 @@ date: "2020-02-07 11:16:23 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/mechanical-keyboard"
-tags: ["Projects", "Mechanical keyboard"]
 ---
 
 

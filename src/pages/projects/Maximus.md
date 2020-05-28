@@ -4,7 +4,6 @@ date: "2020-02-25 14:10:44 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
-tags: ["Projects", "Maximus"]
 ---
 
 

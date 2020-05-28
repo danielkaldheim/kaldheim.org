@@ -4,7 +4,6 @@ date: "2020-02-14 13:57:41 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-photos"
-tags: ["Projects", "Crudus Photos"]
 ---
 
 

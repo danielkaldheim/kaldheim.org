@@ -21,6 +21,7 @@ function findMd() {
 
         echo "- [${title}](/projects/$slug)" >>../src/pages/projects.md
 
+#tags: ["Projects", "${title}"]
         cat >"${name}" <<EOF |
 ---
 title: "${title}"
@@ -28,7 +29,6 @@ date: "${date}"
 author: "${author}"
 type: "page"
 path: "/projects/${slug}"
-tags: ["Projects", "${title}"]
 ---
 EOF
             echo '' >>"${name}"

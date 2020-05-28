@@ -4,7 +4,6 @@ date: "2020-01-31 21:23:16 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/reflow-oven"
-tags: ["Projects", "Reflow Oven"]
 ---
 
 

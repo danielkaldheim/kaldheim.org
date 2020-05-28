@@ -4,7 +4,6 @@ date: "2020-03-10 11:23:12 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-vehicles"
-tags: ["Projects", "Crudus Vehicles"]
 ---
 
 
