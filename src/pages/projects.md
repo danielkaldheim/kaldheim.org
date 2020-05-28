@@ -13,6 +13,7 @@ You could also checkout my [github repo](https://github.com/danielkaldheim/my-pu
 
 ## My project notes
 
+- [Apple iMac harvest components](/projects/apple-imac-harvest-components)
 - [BMW Media Center](/projects/bmw-media-center)
 - [Crudus Markdown Notes](/projects/crudus-markdown-notes)
 - [Crudus Photos](/projects/crudus-photos)
