@@ -1,3 +1,12 @@
+## [1.1.3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.2...v1.1.3) (2020-05-28)
+
+
+### Bug Fixes
+
+* **posts:** internal link to projects ([c8a193a](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/c8a193aa1e0ca57d7c91bf1d918ed7454ae2d3a8))
+* **projects:** fix codehighlighting ([2230c89](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/2230c89752020d3363f0e875d44fb73d73cc07f8))
+* **projects:** update notes ([ed55186](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/ed551860322f454b9f4f9543866a8e0b086ddf7d))
+
 ## [1.1.2](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.1...v1.1.2) (2020-05-28)
 
 
