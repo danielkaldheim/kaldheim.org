@@ -4,6 +4,7 @@ date: "2020-02-07 11:16:23 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/mechanical-keyboard"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Mechanical%20Keyboard
 ---
 
 

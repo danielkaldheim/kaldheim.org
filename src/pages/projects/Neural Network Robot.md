@@ -4,6 +4,7 @@ date: "2020-02-14 13:41:47 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/neural-network-robot"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Neural%20Network%20Robot
 ---
 
 

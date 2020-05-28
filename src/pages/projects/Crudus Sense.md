@@ -4,6 +4,7 @@ date: "2020-05-28 13:27:56 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-sense"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Crudus%20Sense
 ---
 
 

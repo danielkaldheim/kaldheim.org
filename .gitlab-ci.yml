@@ -17,6 +17,7 @@ variables:
   DOCKER_DRIVER: overlay2
   # GITLAB_TOKEN: $CI_JOB_TOKEN
   GITLAB_URL: $CI_SERVER_URL
+  GIT_SUBMODULE_STRATEGY: recursive
 
 services:
   - docker:18.09-dind
@@ -30,6 +31,7 @@ semantic:
   stage: semantic
   image: registry.crudus.no/docker/semantic-release-gitlab:latest
   script:
+    - ls notes
     - semantic-release -e @crudus/semantic-release-config
   only:
     - master

@@ -1,5 +1,26 @@
 #!/bin/bash
 
+url_var() {
+  # URL encode string and optionally store in shell variable
+  #
+  # usage: url_var <string> [var]
+
+  local LC_ALL=C
+  local encoded=""
+  local i c
+
+  for (( i=0 ; i<${#1} ; i++ )); do
+     c=${1:$i:1}
+     case "$c" in
+        [a-zA-Z0-9/_.~-] ) encoded="${encoded}$c" ;;
+        * ) printf -v encoded "%s%%%02x" "$encoded" "'${c}" ;;
+     esac
+  done
+  [ $# -gt 1 ] &&
+     printf -v "$2" "%s" "${encoded}" ||
+     printf "%s\n" "${encoded}"
+}
+
 function findMd() {
     path=$1
     hasIndex=false
@@ -18,10 +39,11 @@ function findMd() {
         title=$(echo -n $(head -n 1 "$path/index.md") | sed -e 's/# //g')
         author=$(git log --pretty='format:%C(auto)%an' -1 "HEAD" -- "$path/index.md")
         slug=$(echo -n $title | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z.md)
+        githubUrl=$(url_var "$basename")
 
         echo "- [${title}](/projects/$slug)" >>../src/pages/projects.md
 
-#tags: ["Projects", "${title}"]
+        #tags: ["Projects", "${title}"]
         cat >"${name}" <<EOF |
 ---
 title: "${title}"
@@ -29,9 +51,10 @@ date: "${date}"
 author: "${author}"
 type: "page"
 path: "/projects/${slug}"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/${githubUrl}
 ---
 EOF
-            echo '' >>"${name}"
+            echo $title
 
         if [ -d "$path/images" ]; then
             mkdir -p "../src/images/projects/$imageSlug/images"
@@ -71,7 +94,7 @@ EOF
     done
 }
 
-git submodule update --init --recursive --remote
+#git submodule update --init --recursive --remote
 
 cat >"./src/pages/projects.md" <<EOF |
 ---
@@ -85,7 +108,7 @@ path: "/projects"
 Over the years I have had so many ideas that I forgot to do something about so I made my self a promise to write them down.
 Here's a list of my notes about ideas and projects I'm currently working on.
 
-You could also checkout my [github repo](https://github.com/danielkaldheim/my-public-notes) for my public notes
+You could also checkout my [github repo](https://github.com/danielkaldheim/my-public-notes) for my public notes.
 
 ## My project notes
 

@@ -1,9 +1,10 @@
 ---
 title: "Headless radio station"
-date: "2020-02-14 13:41:47 +0100"
+date: "2020-05-28 14:50:43 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/headless-radio-station"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Headless%20radio%20station
 ---
 
 
@@ -32,10 +33,3 @@ tasks include:
 "Automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more"
 <https://auphonic.com/>
 
-Last.fm
-
-| Application name | Playlist generator               |
-| ---------------- | -------------------------------- |
-| API key          | cbff1f791890e77644038bf671715072 |
-| Shared secret    | 67e337c3e0a40e21a238a3a50b9a0743 |
-| Registered to    | rufuz                            |

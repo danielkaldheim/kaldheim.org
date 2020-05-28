@@ -4,6 +4,7 @@ date: "2020-05-28 11:01:15 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/longboard"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Longboard
 ---
 
 

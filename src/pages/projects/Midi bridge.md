@@ -4,6 +4,7 @@ date: "2020-02-14 13:41:47 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/midi-bridge-for-piano"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Midi%20bridge
 ---
 
 

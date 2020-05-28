@@ -4,6 +4,7 @@ date: "2020-05-24 20:06:21 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/photo-display"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Photo%20Display
 ---
 
 

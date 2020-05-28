@@ -4,6 +4,7 @@ date: "2020-03-10 11:23:12 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-vehicles"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Crudus%20Vehicles
 ---
 
 

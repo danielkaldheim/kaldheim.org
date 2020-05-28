@@ -4,6 +4,7 @@ date: "2020-05-03 22:56:34 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/mini-rc-loader"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Mini%20RC%20Loader
 ---
 
 

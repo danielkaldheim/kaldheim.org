@@ -4,6 +4,7 @@ date: "2020-02-25 14:10:44 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
+github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Maximus
 ---
 
 
