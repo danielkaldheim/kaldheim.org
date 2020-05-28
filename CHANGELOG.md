@@ -1,3 +1,10 @@
+## [1.1.2](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.1...v1.1.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* **ci:** remove ssh for now ([876234a](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/876234a3f125e47668cbf164573a474eb05cfed8))
+
 ## [1.1.1](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.0...v1.1.1) (2020-05-28)
 
 
