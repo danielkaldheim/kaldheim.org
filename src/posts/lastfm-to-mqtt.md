@@ -28,4 +28,4 @@ This projects pulls recent tracks from Last.fm and distributes it to MQTT and We
 
 ```
 
-Checkout this project on [github](https://github.com/danielkaldheim/last.fm-to-mqtt).
+Checkout this project on [github](https://github.com/danielkaldheim/last.fm-to-mqtt) or read my notes [here](/projects/photo-display).
