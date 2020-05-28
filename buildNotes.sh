@@ -71,6 +71,8 @@ EOF
     done
 }
 
+git submodule update --init --recursive --remote
+
 cat >"./src/pages/projects.md" <<EOF |
 ---
 title: "Projects"
