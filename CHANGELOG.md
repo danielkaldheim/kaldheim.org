@@ -1,3 +1,10 @@
+# [1.1.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.9...v1.1.0) (2020-05-28)
+
+
+### Features
+
+* **Projects:** add public notes ([a9696fb](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/a9696fb871dcf0fb0cf4537f2b2cad86f3a082d1))
+
 ## [1.0.9](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.0.8...v1.0.9) (2020-05-08)
 
 
