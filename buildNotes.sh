@@ -1,24 +1,20 @@
 #!/bin/bash
 
 url_var() {
-  # URL encode string and optionally store in shell variable
-  #
-  # usage: url_var <string> [var]
+    local LC_ALL=C
+    local encoded=""
+    local i c
 
-  local LC_ALL=C
-  local encoded=""
-  local i c
-
-  for (( i=0 ; i<${#1} ; i++ )); do
-     c=${1:$i:1}
-     case "$c" in
-        [a-zA-Z0-9/_.~-] ) encoded="${encoded}$c" ;;
-        * ) printf -v encoded "%s%%%02x" "$encoded" "'${c}" ;;
-     esac
-  done
-  [ $# -gt 1 ] &&
-     printf -v "$2" "%s" "${encoded}" ||
-     printf "%s\n" "${encoded}"
+    for ((i = 0; i < ${#1}; i++)); do
+        c=${1:$i:1}
+        case "$c" in
+        [a-zA-Z0-9/_.~-]) encoded="${encoded}$c" ;;
+        *) printf -v encoded "%s%%%02x" "$encoded" "'${c}" ;;
+        esac
+    done
+    [ $# -gt 1 ] &&
+        printf -v "$2" "%s" "${encoded}" ||
+        printf "%s\n" "${encoded}"
 }
 
 function findMd() {
@@ -70,18 +66,27 @@ EOF
             fi
         done
 
-        cat "$path/index.md" | sed -E "s/^#/$bangs/g" | sed -E "s/^# $title//g" | sed -E "$sedImages" >>"${name}"
+        cat "$path/index.md" | sed -E "s/^#/$bangs/g" | sed -E "s/^# $title//g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
         hasIndex=true
     fi
     for file in "$path"/*.md; do
         if [ -f "$file" ]; then
             # echo "$path -> $file ($depth) -> $bangs"
             if [[ "$file" != "$path/index.md" && "$file" != "$path/$name" && "$file" != "$path/Markdown Cheatsheet.md" ]]; then
+
+                images=$(cat "$file" | grep -- '\.jpg\|\.jpeg\|\.png\|\.gif\|\.svg' | sed -E "s,\!\[(.+)\]\(.\/(.+).(jpg|jpeg|png|gif|svg)\),\2.\3,g")
+                for image in $images; do
+                    if [ -f "$path/$image" ]; then
+                        # echo "$path/$image"
+                        mkdir -p "../src/images/projects/$imageSlug/images"
+                        cp "$path/$image" "../src/images/projects/$imageSlug/$image"
+                    fi
+                done
                 echo '' >>"${name}"
                 if [ "$hasIndex" == "true" ]; then
-                    cat "$file" | sed -E "s/^#/#$bangs/g" | sed -E "$sedImages" >>"${name}"
+                    cat "$file" | sed -E "s/^#/#$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
                 else
-                    cat "$file" | sed -E "s/^#/$bangs/g" | sed -E "$sedImages" >>"${name}"
+                    cat "$file" | sed -E "s/^#/$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
                 fi
             fi
         fi

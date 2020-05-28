@@ -108,7 +108,7 @@ The BNO055 can output the following sensor data:
 
 - [BNO055 - Python & CircuitPython](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython)
 
-```sh
+```bash
 pip3 install RPI.GPIO
 pip3 install adafruit-blinka
 ```
@@ -123,7 +123,7 @@ In order to use certain I2C sensors, such as the BNO055, you'll need to enable I
 
 Edit _/boot/config.txt_
 
-```sh
+```bash
 ## Uncomment some of all of these to enable the optional hardware interfaces
 dtparam=i2c_arm=on
 dtparam=i2s=on
@@ -135,13 +135,13 @@ dtparam=i2c_arm_baudrate=10000
 
 Reboot the device
 
-```sh
+```bash
 sudo reboot
 ```
 
 Check for i2c devices:
 
-```sh
+```bash
 $ i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -156,7 +156,7 @@ $ i2cdetect -y 1
 
 #### Create new project
 
-```sh
+```bash
 mkdir Maximus && cd Maximus
 python3 -m venv .env
 source .env/bin/activate
@@ -165,7 +165,7 @@ pip3 install adafruit-circuitpython-bno055
 
 Example data from sensor:
 
-```sh
+```bash
 Temperature: 28 degrees C
 Accelerometer (m/s^2): (-0.2, -0.07, -9.77)
 Magnetometer (microteslas): (-27.75, -4.0625, 32.5)
@@ -192,7 +192,7 @@ Accelerometer + GPS = predicted positions.
 
 Kalman filter
 
-```sh
+```bash
 [
      P = Position
      V = Velocity
@@ -217,7 +217,7 @@ Velocity readings are done using [Doppler shift](https://imagine.gsfc.nasa.gov/f
 
 ```Vf = Vi + aΔt```
 
-```sh
+```bash
 [ P     [1 Δt                [½Δt²
   V ] =  0 1] x prev_state     Δt ] [ a ]
 state     A     prev_State      B     u
@@ -376,7 +376,7 @@ Screws: M2x04 or M2x06
 
 Set configuration parameters in /boot/config.txt:
 
-```sh
+```bash
 enable_uart=1
 init_uart_clock=16000000
 ```
@@ -439,7 +439,7 @@ For example, when you want to use below Instruction Packet,
 
 ```ID=1(0x01), Length=5(0x05), Instruction=3(0x03), Parameter1=12(0x0C), Parameter2=100(0x64), Parameter3=170(0xAA)```
 
-```sh
+```bash
 Checksum = ~ ( ID + Length + Instruction + Parameter1 + … Parameter 3 ) = ~ [ 0x01 + 0x05 + 0x03 + 0x0C + 0x64 + 0xAA ] = ~ [ 0x123 ] # Only the lower byte 0x23 executes the Not operation. = 0xDC
 ```
 

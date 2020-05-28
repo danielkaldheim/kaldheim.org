@@ -73,14 +73,14 @@ Driver:
 
 `sudo nano /boot/config.txt`:
 
-```sh
+```bash
 # Display orientation. Landscape = 0, Portrait = 1
 display_rotate=1
 ```
 
 `nano ~/.config/lxsession/LXDE-pi/autostart`
 
-```sh
+```bash
 @xset s off
 @xset -dpms
 @xest s noblank

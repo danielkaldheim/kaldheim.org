@@ -39,7 +39,7 @@ Histogram basics
 
 ### Ubuntu
 
-```sh
+```bash
 sudo apt install exiftran libjpeg-turbo-progs
 ```
 
