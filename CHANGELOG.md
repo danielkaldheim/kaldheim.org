@@ -1,3 +1,10 @@
+## [1.1.4](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.3...v1.1.4) (2020-07-06)
+
+
+### Bug Fixes
+
+* **docs:** Update readme ([fb97dc0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/fb97dc03f569e22034915c569acb6eb18369fc68))
+
 ## [1.1.3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.2...v1.1.3) (2020-05-28)
 
 
