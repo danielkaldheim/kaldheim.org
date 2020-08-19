@@ -37,4 +37,5 @@ You could also checkout my [github repo](https://github.com/danielkaldheim/my-pu
 - [RPI Security camera](/projects/rpi-security-camera)
 - [Reflow Oven](/projects/reflow-oven)
 - [Smart helmet](/projects/smart-helmet)
+- [Systemair](/projects/systemair)
 - [USB Media Controller](/projects/usb-media-controller)

@@ -1,6 +1,6 @@
 ---
 title: "BMW Media Center"
-date: "2020-06-24 12:59:52 +0200"
+date: "2020-07-27 20:19:23 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/bmw-media-center"
@@ -17,6 +17,14 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/B
 - [Raspberry Pi 3 Brings Apple CarPlay to Any Car for Less than $100](https://www.autoevolution.com/news/raspberry-pi-3-brings-apple-carplay-to-any-car-for-less-than-100-141258.html)
 - [Carlinkit Wireless CarPlay Wired Android Auto Retrofit Kits Fit For BMW CIC+NBT](https://www.ebay.com/itm/Carlinkit-Wireless-CarPlay-Wired-Android-Auto-Retrofit-Kits-Fit-For-BMW-CIC-NBT/392806966802?hash=item5b751ea612:g:m3QAAOSwZ1ZexeUk)
 - [Carlinkit Wireless USB Dongle Adapter For IOS CarPlay Android Car Auto Head Unit](https://www.ebay.com/itm/Carlinkit-Wireless-USB-Dongle-Adapter-For-IOS-CarPlay-Android-Car-Auto-Head-Unit/392316806386?epid=6033518756&hash=item5b57e764f2:g:WOEAAOSwKY9eX3AQ)
+
+### Raspberry PI Android Auto / Apple CarPlay
+
+1. Download [LinageOS 16.0](https://konstakang.com/devices/rpi4/) and etch to SD-Card.
+
+[How to Add a Power Button to Your Raspberry Pi](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi)
+
+## Shoppinglist for BMW
 
 ### Bmw controller
 

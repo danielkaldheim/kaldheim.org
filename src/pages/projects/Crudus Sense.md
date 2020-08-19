@@ -1,6 +1,6 @@
 ---
 title: "Crudus Sense"
-date: "2020-05-28 13:27:56 +0200"
+date: "2020-08-19 14:00:51 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-sense"
@@ -12,7 +12,7 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/C
 
 ![Sensor board PCB](../../images/projects/crudus-sense/images/Sensor-board-pcb.png)
 
-![Sensor board schematics](../../images/projects/crudus-sense/images/Sensors-board.png)
+![Sensor board schematics v2](../../images/projects/crudus-sense/images/Schematic.png)
 
 \newpage
 \blandscape
