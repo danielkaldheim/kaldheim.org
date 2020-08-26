@@ -1,3 +1,10 @@
+# [1.2.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.4...v1.2.0) (2020-08-26)
+
+
+### Features
+
+* **build:** upload tagged version ([56efd35](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/56efd359602ce052104f1f4a5ea314503ded2bae))
+
 ## [1.1.4](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.3...v1.1.4) (2020-07-06)
 
 
