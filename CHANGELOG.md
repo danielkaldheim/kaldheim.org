@@ -1,3 +1,10 @@
+# [1.3.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.2.0...v1.3.0) (2021-02-09)
+
+
+### Features
+
+* **post:** added new blog post, updated notes ([e076049](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/e07604940d433531057a5a2e442e09165123045c))
+
 # [1.2.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.1.4...v1.2.0) (2020-08-26)
 
 
