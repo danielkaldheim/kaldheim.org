@@ -2,7 +2,7 @@
 title: "System Air Ventilation ESP32 Bridge"
 path: "/system-air-ventilation-esp32-bridge"
 date: "2020-10-13"
-coverImage: "../images/projects/systemair/images/System Air.png"
+coverImage: "../images/projects/systemair/images/System-Air-pcb.png"
 author: "Daniel Rufus Kaldheim"
 type: "post"
 excerpt: ""
