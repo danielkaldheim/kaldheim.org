@@ -1,3 +1,10 @@
+## [1.3.1](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.3.0...v1.3.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* **post:** added systemair post ([cc894f6](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/cc894f6bfd513c2e34150732a81ef89ed2eb6570))
+
 # [1.3.0](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.2.0...v1.3.0) (2021-02-09)
 
 
