@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: websites
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kaldheim-org
@@ -75,12 +75,6 @@ spec:
     kind: ClusterIssuer
   dnsNames:
     - kaldheim.org
-  acme:
-    config:
-      - http01:
-          ingressClass: nginx
-        domains:
-          - kaldheim.org
 ---
 apiVersion: extensions/v1beta1
 kind: Ingress
