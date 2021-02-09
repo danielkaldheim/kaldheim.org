@@ -20,6 +20,7 @@ You could also checkout my [github repo](https://github.com/danielkaldheim/my-pu
 - [Crudus Sense](/projects/crudus-sense)
 - [Crudus Vehicles](/projects/crudus-vehicles)
 - [Electric guitar](/projects/electric-guitar)
+- [FPV Drone](/projects/fpv-drone)
 - [Headless radio station](/projects/headless-radio-station)
 - [Joystick](/projects/joystick)
 - [Kaldheim.org](/projects/kaldheim-org)

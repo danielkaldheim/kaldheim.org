@@ -1,11 +1,14 @@
 ---
 title: "Robot car"
-date: "2020-09-16 15:51:00 +0200"
+date: "2021-02-09 11:13:18 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/robot-car"
 github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/Robot%20Car
 ---
+
+
+![Robot car](../../images/projects/robot-car/IMG_3944.jpeg)
 
 ## Components
 
