@@ -1,6 +1,6 @@
 ---
 title: "Crudus Sense"
-date: "2020-08-19 14:00:51 +0200"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/crudus-sense"

@@ -1,6 +1,6 @@
 ---
 title: "Maximus"
-date: "2020-02-25 14:10:44 +0100"
+date: "2020-09-11 09:47:34 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
@@ -34,28 +34,38 @@ Frame v1 is to unstable. The whole body warps as the frame is to thin and have o
 
 ## Components
 
+- [Batteries](./Battery.md)
+- [Configure BNO055](./BNO055.md)
+- [Development board](./Development%20board.md)
+- [Dynamixel AX-12](./Dynamixel%20AX-12.md)
+- [GPS](./GPS.md)
+- [Other hardware](./Hardware.md)
 - [Stereo Pi](https://www.antratek.com/stereopi-starter-kit)
-- [Configure BNO055](BNO055.md)
 
 ## Robotics
 
-- [Robotics](robotics.md)
+- [Robotics](./robotics.md)
+- [ROS](./ROS.md)
+
+## Artificial Intelligence
+
+- [AI Notes](./ai.md)
 
 ## Articles
 
 - [Comparing Gyroscope Datasheets](https://learn.adafruit.com/comparing-gyroscope-datasheets)
 
-## Artificial Intelligence
+## Inspiration
 
-- [AI Notes](ai.md)
+- [Inspiration notes](./inspiration.md)
 
 ## Books
 
-- [Technician's Guide to Programmable Controllers](https://www.amazon.com/Technicians-Guide-Programmable-Controllers-Borden/dp/1111544093/ref=sr_1_1?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382097&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-1)
-- [PID Controllers: Theory, Design, and Tuning](https://www.amazon.com/PID-Controllers-Theory-Design-Tuning/dp/1556175167/ref=sr_1_1?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-1)
-- [PID Control Fundamentals](https://www.amazon.com/PID-Control-Fundamentals-Jens-Graf/dp/1535358661/ref=sr_1_2?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-2)
+- [Handbook of PI and PID controller tuning rules (3rd edition)](https://www.amazon.com/HANDBOOK-PID-CONTROLLER-TUNING-RULES/dp/1848162421/ref=sr_1_6?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-6)
 - [Model-Reference Robust Tuning of PID Controllers (Advances in Industrial Control)](https://www.amazon.com/Model-Reference-Controllers-Advances-Industrial-Control-ebook/dp/B01EUYVURI/ref=sr_1_3?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-3)
-- [HANDBOOK OF PI AND PID CONTROLLER TUNING RULES (3RD EDITION)](https://www.amazon.com/HANDBOOK-PID-CONTROLLER-TUNING-RULES/dp/1848162421/ref=sr_1_6?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-6)
+- [PID Control Fundamentals](https://www.amazon.com/PID-Control-Fundamentals-Jens-Graf/dp/1535358661/ref=sr_1_2?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-2)
+- [PID Controllers: Theory, Design, and Tuning](https://www.amazon.com/PID-Controllers-Theory-Design-Tuning/dp/1556175167/ref=sr_1_1?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382043&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-1)
+- [Technician's Guide to Programmable Controllers](https://www.amazon.com/Technicians-Guide-Programmable-Controllers-Borden/dp/1111544093/ref=sr_1_1?crid=LPT7MUFOO2C8&keywords=pid+controller&qid=1580382097&rnid=2941120011&s=books&sprefix=pid+con%2Caps%2C260&sr=1-1)
 
 ## BNO055
 
@@ -731,7 +741,7 @@ DyRET is a four legged (quadruped) robot designed to be a robust and versatile p
 
 ![DyRET](https://robotikk.net/media/images/dyret_reconfig.gif)
 
-Links:
+#### Links
 
 - [DyRET Documentation](https://github.com/dyret-robot/dyret_documentation)
 
@@ -741,7 +751,7 @@ A programmable and highly maneuverable robotic cat for STEM education and AI-enh
 
 ![Open Cat](../../images/projects/maximus/images/676275B8-D7D0-4BEC-8536-6CEFDA9413A3.jpg)
 
-Article:
+#### Article
 
 <https://www.hackster.io/petoi/opencat-845129>
 
@@ -751,7 +761,7 @@ A pet robot, just like Boston Dynamics makes
 
 ![Pet dog](../../images/projects/maximus/images/ADF61F43-BECD-45F1-9982-80076E21C033.jpg)
 
-Articles:
+#### Articles
 
 - <https://hackaday.com/2019/03/30/a-pet-robot-just-like-boston-dynamics-makes/>
 - <https://hackaday.io/project/164493-dizzy-wolf>
@@ -767,3 +777,8 @@ The mjbots quad is a small dynamic quadruped, like the MIT mini-Cheetah, but ful
 ### Hexapod
 
 - [Youtube.com: Designing and building a Hexapod!](https://www.youtube.com/watch?v=VwTd5cWJx2M)
+
+### Others
+
+- [Robot Cat](https://www.instructables.com/id/Robot-Cat)
+- [Robot gets around on all fours, thanks to many, many servos](https://hackaday.com/2020/10/13/robot-gets-around-on-all-fours-thanks-to-many-many-servos/)

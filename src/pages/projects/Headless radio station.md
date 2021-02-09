@@ -1,6 +1,6 @@
 ---
 title: "Headless radio station"
-date: "2020-05-28 14:50:43 +0200"
+date: "2020-11-04 10:09:48 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/headless-radio-station"
@@ -33,3 +33,6 @@ tasks include:
 "Automatic audio post production web service for podcasts, broadcasters, radio shows, movies, screencasts and more"
 <https://auphonic.com/>
 
+## Radio receiver
+
+- [educ8s.tv](https://educ8s.tv/esp32-internet-radio)

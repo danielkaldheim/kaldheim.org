@@ -1,6 +1,6 @@
 ---
 title: "Pip-Boy"
-date: "2020-01-30 10:33:54 +0100"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/pip-boy"

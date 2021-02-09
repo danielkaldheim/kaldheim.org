@@ -1,11 +1,13 @@
 ---
 title: "BMW Media Center"
-date: "2020-07-27 20:19:23 +0200"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/bmw-media-center"
 github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/BMW%20Media%20Center
 ---
+
+- BMW Connected Apps Protocol <https://hufman.github.io/stories/bmwconnectedapps>
 
 ## Articles
 
@@ -28,5 +30,3 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/B
 
 - <https://www.cubietruck.com/products/cubieboard4-cc-a80-high-performance-mini-pc-development-board>
 - <https://www.96boards.org/product/hikey960/>
-
-- BMW Connected Apps Protocol <https://hufman.github.io/stories/bmwconnectedapps>

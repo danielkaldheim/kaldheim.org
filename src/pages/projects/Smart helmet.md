@@ -1,6 +1,6 @@
 ---
 title: "Smart helmet"
-date: "2020-02-14 13:41:47 +0100"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/smart-helmet"

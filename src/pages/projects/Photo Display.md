@@ -1,6 +1,6 @@
 ---
 title: "Photo display"
-date: "2020-05-24 20:06:21 +0200"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/photo-display"
@@ -10,7 +10,7 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/P
 
 ## Dashboard
 
-![Dashboard weather](../../images/projects/photo-display/DFAA9D39-DEF1-4422-ACBE-6FE782548061.png)
+![Dashboard weather](../../images/projects/photo-display/images/DFAA9D39-DEF1-4422-ACBE-6FE782548061.png)
 
 <https://www.smashingmagazine.com/2019/02/interactive-weather-dashboard-api-vue-js/>
 

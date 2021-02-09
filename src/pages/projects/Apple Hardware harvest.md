@@ -1,6 +1,6 @@
 ---
 title: "Apple iMac harvest components"
-date: "2020-05-28 15:16:46 +0200"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/apple-imac-harvest-components"

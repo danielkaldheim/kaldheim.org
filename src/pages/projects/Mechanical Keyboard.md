@@ -1,6 +1,6 @@
 ---
 title: "Mechanical keyboard"
-date: "2020-02-07 11:16:23 +0100"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/mechanical-keyboard"

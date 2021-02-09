@@ -1,6 +1,6 @@
 ---
 title: "Lamp to Viljar"
-date: "2020-05-28 13:27:56 +0200"
+date: "2020-09-07 21:48:19 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/lamp-to-viljar"

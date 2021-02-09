@@ -30,13 +30,23 @@ function findMd() {
         bangs=$(seq -f "#" -s '' $depth)
     fi
 
-    if [ -f "$path/index.md" ]; then
-        date=$(git log --pretty='format:%C(auto)%ai' -1 "HEAD" -- "$path/index.md")
-        title=$(echo -n $(head -n 1 "$path/index.md") | sed -e 's/# //g')
-        author=$(git log --pretty='format:%C(auto)%an' -1 "HEAD" -- "$path/index.md")
+    if [ -f "$path/Readme.md" ]; then
+        echo "$path/Readme.md"
+        cat "$path/Readme.md" | sed -E 's/\[\< Parent\]\(..\/Readme.md\)//g' | sed -E '1,2{/^$/d;}' > "$path/Readme.md.tmp"
+
+        date=$(git log --pretty='format:%C(auto)%ai' -1 "HEAD" -- "$path/Readme.md")
+        title=$(echo -n $(head -n 1 "$path/Readme.md.tmp") | sed -e 's/# //g')
+        author=$(git log --pretty='format:%C(auto)%an' -1 "HEAD" -- "$path/Readme.md")
         slug=$(echo -n $title | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z.md)
         githubUrl=$(url_var "$basename")
 
+        echo "---"
+        echo "title: ${title}"
+        echo "date: ${date}"
+        echo "author: ${author}"
+        echo "slug: ${slug}"
+        echo "github: ${githubUrl}"
+        echo "---"
         echo "- [${title}](/projects/$slug)" >>../src/pages/projects.md
 
         #tags: ["Projects", "${title}"]
@@ -50,14 +60,12 @@ path: "/projects/${slug}"
 github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/${githubUrl}
 ---
 EOF
-            echo $title
+            if [ -d "$path/images" ]; then
+                mkdir -p "../src/images/projects/$imageSlug/images"
+                cp -r "$path/images/." "../src/images/projects/$imageSlug/images/"
+            fi
 
-        if [ -d "$path/images" ]; then
-            mkdir -p "../src/images/projects/$imageSlug/images"
-            cp -r "$path/images/." "../src/images/projects/$imageSlug/images/"
-        fi
-
-        images=$(cat "$path/index.md" | grep -- '\.jpg\|\.jpeg\|\.png\|\.gif\|\.svg' | sed -E "s,\!\[(.+)\]\(.\/(.+).(jpg|jpeg|png|gif|svg)\),\2.\3,g")
+        images=$(cat "$path/Readme.md" | grep -- '\.jpg\|\.jpeg\|\.png\|\.gif\|\.svg' | sed -E "s,\!\[(.+)\]\(.\/(.+).(jpg|jpeg|png|gif|svg)\),\2.\3,g")
         for image in $images; do
             if [ -f "$path/$image" ]; then
                 # echo "$path/$image"
@@ -66,13 +74,13 @@ EOF
             fi
         done
 
-        cat "$path/index.md" | sed -E "s/^#/$bangs/g" | sed -E "s/^# $title//g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
+        cat "$path/Readme.md.tmp" | sed -E "s/^#/$bangs/g" | sed -E "s/^# $title//g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
         hasIndex=true
     fi
     for file in "$path"/*.md; do
         if [ -f "$file" ]; then
             # echo "$path -> $file ($depth) -> $bangs"
-            if [[ "$file" != "$path/index.md" && "$file" != "$path/$name" && "$file" != "$path/Markdown Cheatsheet.md" ]]; then
+            if [[ "$file" != "$path/Readme.md" && "$file" != "$path/$name" && "$file" != "$path/Markdown Cheatsheet.md" ]]; then
 
                 images=$(cat "$file" | grep -- '\.jpg\|\.jpeg\|\.png\|\.gif\|\.svg' | sed -E "s,\!\[(.+)\]\(.\/(.+).(jpg|jpeg|png|gif|svg)\),\2.\3,g")
                 for image in $images; do
@@ -84,14 +92,17 @@ EOF
                 done
                 echo '' >>"${name}"
                 if [ "$hasIndex" == "true" ]; then
-                    cat "$file" | sed -E "s/^#/#$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
+                    cat "$file" | sed -E 's/\[\< Parent\](..\/Readme.md).*//g' | sed -E '1,2{/^$/d;}' | sed -E "s/^#/#$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
                 else
-                    cat "$file" | sed -E "s/^#/$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
+                    cat "$file" | sed -E 's/\[\< Parent\](..\/Readme.md).*//g' | sed -E '1,2{/^$/d;}' | sed -E "s/^#/$bangs/g" | sed -E "$sedImages" | sed -E "s/\`\`\`sh/\`\`\`bash/g" >>"${name}"
                 fi
             fi
         fi
     done
 
+    if [ -f "$path/Readme.md.tmp" ]; then
+        rm "$path/Readme.md.tmp"
+    fi
     for i in "$path"/*; do
         if [ -d "$i" ]; then
             findMd "$i"
@@ -123,7 +134,7 @@ EOF
 cd notes
 for path in ./Projects/*; do
     if [ -d "$path" ]; then
-        if [ -f "$path/index.md" ]; then
+        if [ -f "$path/Readme.md" ]; then
             findMd "${path}"
         fi
     fi
