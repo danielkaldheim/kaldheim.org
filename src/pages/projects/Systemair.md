@@ -1,6 +1,6 @@
 ---
 title: "Systemair"
-date: "2020-09-07 21:48:19 +0200"
+date: "2021-02-09 11:28:45 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/systemair"
@@ -9,6 +9,13 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/S
 
 
 Model: Systemair  VR 400 DCV/B R
+
+## System Air ESP32 Bridge
+
+I have built a circuit board that works with system air, checkout this [repository](https://github.com/danielkaldheim/systemair-esp32-bridge) for more information.
+
+![PCB](../../images/projects/systemair/images/System%20Air.png)
+![Schematics](../../images/projects/systemair/images/Schematic.png)
 
 ## Images
 

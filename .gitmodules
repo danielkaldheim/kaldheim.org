@@ -1,3 +1,4 @@
 [submodule "notes"]
 	path = notes
 	url = git@gitlab.crudus.no:notes/public.git
+	branch = master

@@ -28,3 +28,5 @@ https://www.youtube.com/watch?v=Y6_P83OfEzU
 * [Fat Shark Recon V3](https://www.fatshark.com/product/recon-v3/)
 * [Radiomaster TX16S](https://www.radiomasterrc.com/article-77.html)
 * GoPro Hero 3 Silver
+
+Checkout my [project page](/projects/fpv-drone) for more information.
