@@ -1,3 +1,10 @@
+## [1.3.2](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.3.1...v1.3.2) (2021-02-09)
+
+
+### Bug Fixes
+
+* **images:** fix spaces images ([67df190](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/67df190e04704077539942e96593dc61075c8c12))
+
 ## [1.3.1](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.3.0...v1.3.1) (2021-02-09)
 
 
