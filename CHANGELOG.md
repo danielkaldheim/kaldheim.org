@@ -1,3 +1,10 @@
+## [1.3.4](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.3.3...v1.3.4) (2021-05-28)
+
+
+### Bug Fixes
+
+* **projects:** update projects ([3152fd6](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/commit/3152fd612844c6f8cd29bf903defab00463cc262))
+
 ## [1.3.3](https://gitlab.crudus.no/websites/kaldheim.org-gatsby/compare/v1.3.2...v1.3.3) (2021-02-11)
 
 
