@@ -45,6 +45,21 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/F
 | Pitch | 1.27    | 0.72 | 0.10    | 907             |
 | Yaw   | 1.00    | 0.75 | 0.00    | 800             |
 
+## Payload Drone
+### RTK modules
+
+[What is GPS RTK?](https://learn.sparkfun.com/tutorials/what-is-gps-rtk/all)
+
+- [H-RTK F9P](https://shop.holybro.com/h-rtk-f9p_p1226.html)
+
+![H-RTK F9P types](../../images/projects/fpv-drone/images/e4fd938423.png)
+
+### Flight controllers
+
+- [Pixhawk 4](https://docs.px4.io/master/en/flight_controller/pixhawk4.html)
+
+![Pixhawk 4](../../images/projects/fpv-drone/images/pixhawk4_hero_upright.74e8a52a.jpg)
+
 ## High speed follow me - Telemetry link
 
 This is a sketching of an idea of a high speed follow me drone.
@@ -73,3 +88,8 @@ A simple mobile application that get the current GPS data from the phone and sen
 
 - [Geekcreit HC-12 433MHz SI4463](https://www.banggood.com/Geekcreit-HC-12-433MHz-SI4463-Wireless-Serial-Module-Wireless-Transceiver-Transmission-Serial-Communication-Data-Board-Remote-1000M-p-973522.html)
 - [Geekcreit HC-06 Wireless bluetooth Transceiver](https://www.banggood.com/Geekcreit-HC-06-Wireless-bluetooth-Transceiver-RF-Main-Module-Serial-Geekcreit-for-Arduino-products-that-work-with-official-Arduino-boards-p-80364.html)
+
+## Tello
+
+- [Hello, Tello - Hacking Drones With Go](https://gobot.io/blog/2018/04/20/hello-tello-hacking-drones-with-go/)
+- [Drone Programming With Python Course | 3 Hours | Including x4 Projects (2021)](https://www.youtube.com/watch?v=LmEcyQnfpDA)

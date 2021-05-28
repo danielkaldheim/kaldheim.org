@@ -14,7 +14,7 @@ Model: Systemair  VR 400 DCV/B R
 
 I have built a circuit board that works with system air, checkout this [repository](https://github.com/danielkaldheim/systemair-esp32-bridge) for more information.
 
-![PCB](../../images/projects/systemair/images/System-Air-pcb.png)
+![PCB](../../images/projects/systemair/images/System%20Air.png)
 ![Schematics](../../images/projects/systemair/images/Schematic.png)
 
 ## Images

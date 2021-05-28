@@ -1,6 +1,6 @@
 ---
 title: "Maximus"
-date: "2020-09-11 09:47:34 +0200"
+date: "2021-02-24 20:54:43 +0100"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
@@ -54,6 +54,7 @@ Frame v1 is to unstable. The whole body warps as the frame is to thin and have o
 ## Articles
 
 - [Comparing Gyroscope Datasheets](https://learn.adafruit.com/comparing-gyroscope-datasheets)
+- [PID Controller Implementation in Software](https://www.youtube.com/watch?v=zOByx3Izf5U)
 
 ## Inspiration
 
