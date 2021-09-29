@@ -1,6 +1,6 @@
 ---
 title: "Maximus"
-date: "2021-09-29 13:05:50 +0200"
+date: "2021-09-29 13:58:44 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
@@ -22,6 +22,8 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/M
 
 ![Frame v2 - rev 2](../../images/projects/maximus/images/Frame_v2_rev3.png)
 
+![Frame v2 - with husky lens](../../images/projects/maximus/images/Frame_v2_with_husky.png)
+
 ![Frame v2 - 500 grams](../../images/projects/maximus/images/IMG_3009.jpeg)
 
 ### Frame v1
@@ -41,8 +43,11 @@ Frame v1 is to unstable. The whole body warps as the frame is to thin and have o
 - [Development board](./Development%20board.md)
 - [Dynamixel AX-12](./Dynamixel%20AX-12.md)
 - [GPS](./GPS.md)
+- [Coral.ai - Dev Board Mini](https://coral.ai/products/dev-board-mini)
 - [Other hardware](./Hardware.md)
 - [Stereo Pi](https://www.antratek.com/stereopi-starter-kit)
+- [ReSpeaker 4-Mic Array for Raspberry Pi](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html)
+- [Husky lens](https://www.dfrobot.com/huskylens.html)
 
 ## Robotics
 
@@ -613,26 +618,74 @@ Recommended GPS antenna
 
 ## Hardware
 
-### Jetson Nano
+### Compute alternatives
+
+#### Jetson Nano
 
 NVIDIA Jetson Nano enables the development of millions of new small, low-power AI systems. It opens new worlds of embedded IoT applications, including entry-level Network Video Recorders (NVRs), home robots, and intelligent gateways with full analytics capabilities.
 
 ![Jetson nano](../../images/projects/maximus/images/FDEFEF14-44DF-45AA-BD19-4709A67D08EA.png)
 
-Links:
+##### Links
 
 - <https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/>
 
-### Raspberry Pi 4 - Model B
+#### Raspberry Pi 4 - Model B
 
 The speed and performance of the new Raspberry Pi 4 is a step up from earlier models. For the first time, we've built a complete desktop experience. Whether you're editing documents, browsing the web with a bunch of tabs open, juggling spreadsheets or drafting a presentation, you'll find the experience smooth and very recognisable — but on a smaller, more energy-efficient and much more cost-effective machine.
 
 ![Raspberry Pi 4](../../images/projects/maximus/images/pi4-labelled-99c2e8935bb3cfdb27d23f634ea98a7e.png)
 
-Links:
+##### Links
 
 - [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
 
+#### Coral AI - Dev Board Mini
+
+The Coral Dev Board Mini is a single-board computer that provides fast machine learning (ML) inferencing in a small form factor. It's primarily designed as an evaluation device for the Accelerator Module (a surface-mounted module that provides the Edge TPU), but it's also a fully-functional embedded system you can use for various on-device ML projects.
+
+![Coral AI - Dev board mini](../../images/projects/maximus/images/coral-ai-dev-board-mini.png)
+
+##### Links
+
+- [Dev Board Mini - coral.ai](https://coral.ai/products/dev-board-mini)
+
+##### Specs
+
+|                |                                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CPU            | MediaTek 8167s SoC (Quad-core Arm Cortex-A35)                                                                                                                                                                             |
+| GPU            | IMG PowerVR GE8300 (integrated in SoC)                                                                                                                                                                                    |
+| ML accelerator | Google Edge TPU coprocessor: <br />4 TOPS (int8); 2 TOPS per watt                                                                                                                                                         |
+| RAM            | 2 GB LPDDR3                                                                                                                                                                                                               |
+| Flash memory   | 8 GB eMMC                                                                                                                                                                                                                 |
+| Wireless       | Wi-Fi 5 (802.11a/b/g/n/ac); Bluetooth 5.0                                                                                                                                                                                 |
+| Audio/video    | 3.5mm audio jack;<br /> digital PDM microphone; 2.54mm 2-pin speaker terminal; <br />micro HDMI (1.4); <br />24-pin FFC connector for MIPI-CSI2 camera (4-lane); <br />24-pin FFC connector for MIPI-DSI display (4-lane) |
+| Input/output   | 40-pin GPIO header; 2x USB Type-C (USB 2.0)                                                                                                                                                                               |
+
+### Other hardware
+
+#### Husky lens
+
+HuskyLens is an easy-to-use AI machine vision sensor with 7 built-in functions: face recognition, object tracking, object recognition, line tracking, color recognition, tag recognition and object classification.
+
+Through the UART / I2C port, HuskyLens can connect to Arduino and micro:bit to help you make very creative projects without playing with complex algorithms.
+
+![Husky lense](../../images/projects/maximus/images/I2cModeWire.png)
+
+##### Links
+
+- [Husky lens wiki - dfrobot.com](https://wiki.dfrobot.com/HUSKYLENS_V1.0_SKU_SEN0305_SEN0336)
+
+#### ReSpeaker 4-Mic Array for Raspberry Pi
+
+ReSpeaker 4-Mic Array for Raspberry Pi is a 4 microphone expansion board for Raspberry Pi designed for AI and voice applications. This means that you can build a more powerful and flexible voice product that integrates Amazon Alexa Voice Service, Google Assistant, and so on.
+
+![ReSpeaker](../../images/projects/maximus/images/respeaker_4-mic_array_for_raspberry_pi01_1.png)
+
+##### Links
+
+- [ReSpeaker 4-Mic Array for Raspberry Pi - seeedstudio.com](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html)
 ## ROS
 
 - [Setup ROS tutorial raspberry pi 3](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
