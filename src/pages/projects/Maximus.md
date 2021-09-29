@@ -1,6 +1,6 @@
 ---
 title: "Maximus"
-date: "2021-02-24 20:54:43 +0100"
+date: "2021-09-29 13:05:50 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
@@ -19,6 +19,8 @@ github: https://github.com/danielkaldheim/my-public-notes/tree/master/Projects/M
 ## Body
 
 ### Frame v2 - current
+
+![Frame v2 - rev 2](../../images/projects/maximus/images/Frame_v2_rev3.png)
 
 ![Frame v2 - 500 grams](../../images/projects/maximus/images/IMG_3009.jpeg)
 
@@ -735,6 +737,11 @@ hex: "\\xf0\\x9f\\x90\\xb6"
 ### Read
 
 - [PyRobot](https://www.pyrobot.org/)
+- [PyBullet Simulation example](https://hackaday.io/project/171456-diy-hobby-servos-quadruped-robot)
+
+### videos
+
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](https://www.youtube.com/watch?v=lKYh6uuCwRY&feature=emb_title)
 
 ### DyRET Robot
 
