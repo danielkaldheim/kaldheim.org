@@ -1,6 +1,6 @@
 ---
 title: "Maximus"
-date: "2021-09-29 13:58:44 +0200"
+date: "2021-10-01 15:52:12 +0200"
 author: "Daniel Rufus Kaldheim"
 type: "page"
 path: "/projects/maximus"
@@ -48,6 +48,7 @@ Frame v1 is to unstable. The whole body warps as the frame is to thin and have o
 - [Stereo Pi](https://www.antratek.com/stereopi-starter-kit)
 - [ReSpeaker 4-Mic Array for Raspberry Pi](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html)
 - [Husky lens](https://www.dfrobot.com/huskylens.html)
+- [Indoor location](./Indoor%20Location.md)
 
 ## Robotics
 
@@ -686,6 +687,37 @@ ReSpeaker 4-Mic Array for Raspberry Pi is a 4 microphone expansion board for Ras
 ##### Links
 
 - [ReSpeaker 4-Mic Array for Raspberry Pi - seeedstudio.com](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html)
+- [ReSpeaker 4-Mic Array for Raspberry Pi - Wiki](https://wiki.seeedstudio.com/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/)
+## Indoor location
+
+I have many ESP32 microcontrollers spread around the house, that measures temperature and air quality. Since the EPS32 has BLE and WiFi interfaces I can add functionality to them to broadcast iBeacon signals which then I can read from the raspberry pi on the dog.
+I would like to experiment with this to see if I can get a rough idea of where the dog is in the house.
+
+### Three distances known
+
+```cpp
+- (CGPoint)getCoordinateWithBeaconA:(CGPoint)a beaconB:(CGPoint)b beaconC:(CGPoint)c distanceA:(CGFloat)dA distanceB:(CGFloat)dB distanceC:(CGFloat)dC {
+    CGFloat W, Z, x, y, y2;
+    W = dA*dA - dB*dB - a.x*a.x - a.y*a.y + b.x*b.x + b.y*b.y;
+    Z = dB*dB - dC*dC - b.x*b.x - b.y*b.y + c.x*c.x + c.y*c.y;
+
+    x = (W*(c.y-b.y) - Z*(b.y-a.y)) / (2 * ((b.x-a.x)*(c.y-b.y) - (c.x-b.x)*(b.y-a.y)));
+    y = (W - 2*x*(b.x-a.x)) / (2*(b.y-a.y));
+    //y2 is a second measure of y to mitigate errors
+    y2 = (Z - 2*x*(c.x-b.x)) / (2*(c.y-b.y));
+
+    y = (y + y2) / 2;
+    return CGPointMake(x, y);
+}
+```
+
+### Links
+
+- [Triangulating your position - Article](https://everything2.com/title/Triangulate)
+
+### Notes
+
+Check out Levenberg-Marquardt algorithm [Triangulate example for iBeacons - stackoverflow](https://stackoverflow.com/questions/20332856/triangulate-example-for-ibeacons)
 ## ROS
 
 - [Setup ROS tutorial raspberry pi 3](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)

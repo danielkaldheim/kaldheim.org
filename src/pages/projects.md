@@ -14,8 +14,6 @@ You could also checkout my [github repo](https://github.com/danielkaldheim/my-pu
 ## My project notes
 
 - [Apple iMac harvest components](/projects/apple-imac-harvest-components)
-- [BMW Media Center](/projects/bmw-media-center)
-- [Crudus Markdown Notes](/projects/crudus-markdown-notes)
 - [Crudus Photos](/projects/crudus-photos)
 - [Crudus Sense](/projects/crudus-sense)
 - [Crudus Vehicles](/projects/crudus-vehicles)
@@ -24,12 +22,10 @@ You could also checkout my [github repo](https://github.com/danielkaldheim/my-pu
 - [Headless radio station](/projects/headless-radio-station)
 - [Joystick](/projects/joystick)
 - [Kaldheim.org](/projects/kaldheim-org)
-- [Lamp to Viljar](/projects/lamp-to-viljar)
 - [Longboard](/projects/longboard)
 - [Maximus](/projects/maximus)
 - [Mechanical keyboard](/projects/mechanical-keyboard)
 - [Midi bridge for piano](/projects/midi-bridge-for-piano)
-- [Mini RC Loader](/projects/mini-rc-loader)
 - [Motorcycle App](/projects/motorcycle-app)
 - [Neural Network Robot](/projects/neural-network-robot)
 - [Photo display](/projects/photo-display)
